@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	          <!-- Responsive -->
+			  <meta name="mobile-web-app-capable" content="yes">
+			  <meta name="apple-mobile-web-app-capable" content="yes">
+			  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+					  <!-- End Responsive -->
+					  <title>Taller de Aplicaciones para Internet</title>
+					  <link href="https://fonts.googleapis.com/css?family=Signika:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+					  <link rel="stylesheet" href="../css/normalize.css">
+					  <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+					  <link rel="stylesheet" href="../css/animate.css">
+                      <link rel="stylesheet" href="../css/main.css">
+                      
+                      <script type="text/javascript">
+                        function showPic (whichpic) {
+                         if (document.getElementById) {
+                          document.getElementById('imgContenedor').src = whichpic.href;
+                          if (whichpic.title) {
+                           document.getElementById('imgDescripcion').childNodes[0].nodeValue = whichpic.title;
+                          } else {
+                           document.getElementById('imgDescripcion').childNodes[0].nodeValue = whichpic.childNodes[0].nodeValue;
+                          }
+                          return false;
+                         } else {
+                          return true;
+                         }
+                        }
+                        </script>           
+</head>
+<body>
+        <style>
+                div#ejemploGaleria {
+                  background-color: #123;
+                  border: 3px solid #234;
+                  margin: 0 auto;
+                  padding: 10px;
+                  width: 480px;
+                }
+                span#imgDescripcion {
+                  color: #ABC;
+                  float: left;
+                  font-size: 18px;
+                  width: 250px;
+                }
+                ul#imgListaEjemplo{
+                  float: right;
+                  margin: 0;
+                }
+                ul#imgListaEjemplo li {
+                  display: inline;
+                  padding: 0 5px;
+                }
+                ul#imgListaEjemplo li a {
+                  font-size: 16px;
+                }
+                img#imgContenedor{
+                  margin-top: 10px;
+                }
+                </style>
+                
+                <div id="ejemploGaleria">
+                <span id="imgDescripcion">Galería de imágenes</span> 
+                <ul id="imgListaEjemplo">
+                <li><a onclick="return showPic(this)" href="https://scontent-sea1-1.cdninstagram.com/vp/10d97d7b7be0ca789b26da500a55ae13/5C3D0AB7/t51.2885-15/e35/28152472_234613383749544_1654444268825083904_n.jpg?se=7&ig_cache_key=MTcxODI1NTU5MDEyMTU4MTkyMg%3D%3D.2" title="Esta es la primera imagen">1</a></li>
+                <li><a onclick="return showPic(this)" href="https://scontent-sea1-1.cdninstagram.com/vp/79382abb45a0d4dc55ccfbca77797e20/5C28EEAB/t51.2885-15/e35/27580335_2059809940970889_8465658819937042432_n.jpg?se=7&ig_cache_key=MTcxNjA3OTA1MTM3MTk5MzU3Nw%3D%3D.2" title="Esta es la segunda imagen">2</a></li>
+                <li><a onclick="return showPic(this)" href="https://scontent-sea1-1.cdninstagram.com/vp/d87e9fdef434b9418e7b597cac532aa5/5C46AF52/t51.2885-15/e35/27581827_422654438171541_4901312499468468224_n.jpg?se=7&ig_cache_key=MTcxNTQ1MzUyOTI1NjU5MTY4Ng%3D%3D.2" title="Esta es la tercera imagen">3</a></li>
+                <li><a onclick="return showPic(this)" href="https://scontent-sea1-1.cdninstagram.com/vp/7787a5dee42be4716c51df614940c501/5C5FEFA3/t51.2885-15/e35/c0.135.1080.1080/s480x480/25036280_1974978469437374_7148972995472523264_n.jpg?ig_cache_key=MTY3OTEwODU4NzExMDM5NTA4NQ%3D%3D.2.c"Esta es la última imagen">4</a></li>
+                </ul>
+                <img id="imgContenedor" src="C:\Users\lukav\Desktop\ESTUDIOS\TAPI\ENA\imagenes\WP_20150616_002.jpg" />
+            </div>
+    
+</body>
+</html>
